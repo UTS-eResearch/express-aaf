@@ -11,9 +11,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('trust proxy', 1);
 
+// TODO: this is v naive
+
 app.use(session({
 	name: config['sessionName'],
-	keys: [ 'uid', 'displayName', 'affiliation' ]
+	secret: config['cookieKey'],
+	maxAge: Number(config['expiry']) * 1000 * 60 * 60
 }));
 
 function check_jwt(authjwt) {

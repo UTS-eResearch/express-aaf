@@ -1,0 +1,13 @@
+{
+	"host": "0.0.0.0",
+	"port": "8080",
+	"secret": "zzzzZZZZZzzzz",
+	"authURL": "https://rapid.test.aaf.edu.au/jwt/authnrequest/research/yadayadayada",
+	"iss": "https://rapid.test.aaf.edu.au",
+	"aud": "http://localhost:8080/",
+	"success": "http://localhost:8089/",
+	"attributes": "https://aaf.edu.au/attributes",
+	"sessionName": "session",
+	"expiry": 24,
+	"cookieKey": "########"
+}
